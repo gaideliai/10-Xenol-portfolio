@@ -1,13 +1,13 @@
 /* basic */
 
 /* layout */
-.bg-primary{
+.bg-primary {
     background-color: var(--color-primary-light);
 }
-.bg-grey{
+.bg-grey {
     background-color: var(--color-grey);
 }
-h2{
+h2 {
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -15,7 +15,7 @@ h2{
     line-height: 40px;
     text-transform: capitalize;
 }
-    h2::before{
+    h2::before {
         content: '';
         display: inline-block;
         width: 50px;
@@ -23,7 +23,7 @@ h2{
         background-color: var(--color-primary-light);
         margin: -65px calc(50% - 25px);
     }
-    h2::after{
+    h2::after {
         content: '';
         display: inline-block;
         width: 90px;
@@ -31,7 +31,7 @@ h2{
         background-color: var(--color-primary-light);
         margin: 7px calc(50% - 45px);
     }
-    h2.up{
+    h2.up {
         text-transform: uppercase;
     }
 /* header */
@@ -43,7 +43,31 @@ h2{
 /* portfolio */
 
 /* services */
-
+.service {
+    display: inline-block;
+    width: calc(100% / 3);
+    padding: 20px;
+    float: left;
+    text-align: center;
+}
+    .service > i {
+        display: inline-block;
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .service > h3 {
+        display: inline-block;
+        width: 100%;
+        margin: 10px 0;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .service > p {
+        display: inline-block;
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+    }
 /* team */
 
 /* numbers */
