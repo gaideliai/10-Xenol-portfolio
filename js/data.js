@@ -45,6 +45,28 @@ const services = [
 //team
 
 //numbers
+const numbers = [
+    {
+        icon: 'archive',
+        number: 130,
+        title: 'Projects done'
+    },
+    {
+        icon: 'hand-lizard-o',
+        number: 80,
+        title: 'Happy clients'
+    },
+    {
+        icon: 'users',
+        number: 700,
+        title: 'Employees'
+    },
+    {
+        icon: 'trophy',
+        number: 90,
+        title: 'Award winner'
+    }
+];
 
 //pricing
 

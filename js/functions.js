@@ -27,6 +27,32 @@ function renderServices(serviceList){
 //team
 
 //numbers
+function renderAchievements(list){
+    let HTML = '';
+    if (!Array.isArray(list)){
+        return console.eror('ERROR: duok sarasa...');
+    }
+    if (list.legth === 0) {
+        return console.eror('ERROR: sarasas negali buti tuscias...');
+    }
+    
+    for (let i = 0; i < list.length; i++) {
+        const item = list[i];
+        
+        HTML += `<div class="achievement">
+                    <div class="center">
+                        <i class="fa fa-${item.icon}"></i>
+                        <div class="texts">
+                            <div class="number">${item.number}</div>
+                            <br>
+                            <h5 class="title">${item.title}</h5>
+                        </div>
+                    </div>
+                </div>`
+        
+    }
+    return document.querySelector('#achievements').innerHTML = HTML;
+}
 
 //pricing
 
