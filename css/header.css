@@ -1,4 +1,4 @@
-#main-header {
+#main_header {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,11 +8,11 @@
     color: #fff;
     padding: 35px 0;
 }
-    #main-header .logo {
+    #main_header .logo {
         display: inline-block;
         float: left;
     }
-    #main-header i {
+    #main_header i {
         display: none;
         width: 25px;
         float: right;
@@ -22,14 +22,14 @@
         cursor: pointer;
         transition: all 0.1s;
     }
-        #main-header i:hover {           
+        #main_header i:hover {           
             font-size: 30px;
         }
-    #main-header nav {
+    #main_header nav {
         display: inline-block;
         float: right;
     }
-        #main-header nav> a {
+        #main_header nav> a {
             display: inline-block;
             float: left;
             margin: 0 15px;
@@ -41,7 +41,7 @@
             text-transform: uppercase;
             position: relative;
         }
-            #main-header nav> a::after {
+            #main_header nav> a::after {
                 display: inline-block;                
                 content: '';
                 height: 1px;
@@ -52,12 +52,12 @@
                 background-color: #fff;
                 transition: all 300ms;
             }
-            #main-header nav> a:hover::after,
-            #main-header nav> a.active::after {
+            #main_header nav> a:hover::after,
+            #main_header nav> a.active::after {
                 left: 0%;
                 right: 0%;
             }
-    #main-header > .overlay {
+    #main_header > .overlay {
         display: none;
         position: fixed;
         top: 0;
@@ -67,7 +67,7 @@
         z-index: 1;
         background-color: #000c;        
     }    
-        #main-header > .overlay > .menu {
+        #main_header > .overlay > .menu {
             display: inline-block;
             width: 350px;
             height: 100%;
@@ -77,30 +77,30 @@
             font-size: 22px; 
             line-height: 25px;
         }
-            #main-header > .overlay > .menu > *{
+            #main_header > .overlay > .menu > *{
                 display: inline-block;
                 float: left;                
                 padding: 10px;
                 border-bottom: 1px solid #ccc;
             }
-            #main-header > .overlay .title {                
+            #main_header > .overlay .title {                
                 width: calc(100% - 45px);                               
             }
-            #main-header > .overlay i {                
+            #main_header > .overlay i {                
                 width: 45px;                                               
             }
 
 @media (max-width: 900px){
-    #main-header.show-menu > .overlay {
+    #main_header.show-menu > .overlay {
         display: inline-block;
     }
-    #main-header i {
+    #main_header i {
         display: inline-block;       
     }
-    #main-header nav {
+    #main_header nav {
         display: none;       
     }
-    #main-header.show-menu nav {
+    #main_header.show-menu nav {
         display: inline-block;
         width: 350px;
         position: fixed;
@@ -109,13 +109,13 @@
         left: 0px;
         z-index: 2;
     }
-    #main-header.show-menu nav a {
+    #main_header.show-menu nav a {
         color: #333;
         width: 100%;
         margin: 0;
         padding: 10px;
     }
-    #main-header.show-menu nav a:hover {
+    #main_header.show-menu nav a:hover {
         background-color: #eee;
     }
 }
