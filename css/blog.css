@@ -33,6 +33,7 @@
         font-size: 24px;
         line-height: 30px;
         text-decoration: none;
+        color: #000;
     }            
     .blog> p {
         display: inline-block;
@@ -44,7 +45,9 @@
     .blog> .more {
         display: inline-block;
         text-decoration: none;
-        font-size: 20px;
-        line-height: 36px;
-        border-bottom: 1px solid blue;
+        font-size: 12px;
+        line-height: 24px;
+        border-bottom: 2px solid #000;
+        color: #000;
+        text-transform: uppercase;
     }

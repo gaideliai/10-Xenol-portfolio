@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
     background-color: #000c;
     color: #fff;
     padding: 35px 0;
@@ -56,11 +57,65 @@
                 left: 0%;
                 right: 0%;
             }
+    #main-header > .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background-color: #000c;        
+    }    
+        #main-header > .overlay > .menu {
+            display: inline-block;
+            width: 350px;
+            height: 100%;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            font-size: 22px; 
+            line-height: 25px;
+        }
+            #main-header > .overlay > .menu > *{
+                display: inline-block;
+                float: left;                
+                padding: 10px;
+                border-bottom: 1px solid #ccc;
+            }
+            #main-header > .overlay .title {                
+                width: calc(100% - 45px);                               
+            }
+            #main-header > .overlay i {                
+                width: 45px;                                               
+            }
+
 @media (max-width: 900px){
+    #main-header.show-menu > .overlay {
+        display: inline-block;
+    }
     #main-header i {
         display: inline-block;       
     }
     #main-header nav {
         display: none;       
+    }
+    #main-header.show-menu nav {
+        display: inline-block;
+        width: 350px;
+        position: fixed;
+        top: 60px;
+        bottom: 20px;
+        left: 0px;
+        z-index: 2;
+    }
+    #main-header.show-menu nav a {
+        color: #333;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    #main-header.show-menu nav a:hover {
+        background-color: #eee;
     }
 }
