@@ -2,6 +2,7 @@
 .blog {
     display: inline-block;        
     position: relative;
+    margin: 20px 0;
 }
     .blog> img {
         display: inline-block;

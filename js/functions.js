@@ -14,7 +14,7 @@ function renderServices(serviceList){
 
     for (let i=0; i<serviceList.length; i++){
         const service = serviceList[i];
-        HTML += `<div class="service">
+        HTML += `<div class="service col-4 col-md-6 col-xs-12">
                     <i class="fa fa-${service.icon}"></i>
                     <h3>${service.title}</h3>
                     <p>${service.description}</p>
@@ -39,7 +39,7 @@ function renderAchievements(list){
     for (let i = 0; i < list.length; i++) {
         const item = list[i];
         
-        HTML += `<div class="achievement col-3">
+        HTML += `<div class="achievement col-3 col-lg-6 col-xs-12">
                     <div class="center">
                         <i class="fa fa-${item.icon}"></i>
                         <div class="texts">
@@ -77,7 +77,7 @@ function renderBlog(list) {
             formatedDate +=`, ${article.date.year}`;
         }
 
-        HTML +=`<div class="blog col-4">
+        HTML +=`<div class="blog col-4 col-md-6 col-sm-12">
                     <img src="./img/blog/${article.photo.src}" alt="${article.photo.alt}">
                     <a class="date" href="#/articles-by-date/${dateLink}">${formatedDate}</a>
                     <a class="title" href="${article.link}">${article.title}</a>

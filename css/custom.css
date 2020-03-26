@@ -47,9 +47,7 @@ h2 {
 /* services */
 .service {
     display: inline-block;
-    width: calc(100% / 3);
-    padding: 20px;
-    float: left;
+    padding: 20px;    
     text-align: center;
 }
     .service > i {
@@ -80,7 +78,8 @@ h2 {
     background-attachment: fixed;
 }
 .achievement {
-    display: inline-block;    
+    display: inline-block;
+    padding: 20px 0;    
     text-align: center;
 }
     .achievement > .center {
