@@ -12,6 +12,9 @@ close.addEventListener('click', () => {
     return header.classList.remove('show-menu');
 });
 
+//scroll
+window.addEventListener('scroll', headerScroll);
+
 //hero
 
 //about us
