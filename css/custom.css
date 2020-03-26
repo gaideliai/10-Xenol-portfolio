@@ -39,6 +39,9 @@ h2 {
 /* header */
 
 /* hero */
+#hero {
+    min-height: 100vh;
+}
 
 /* about us */
 
