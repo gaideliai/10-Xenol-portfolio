@@ -1,6 +1,6 @@
 # 10-Xenol-portfolio
 
-This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
+This project is for educational porpuses only.
 
 Site published at https://gaideliai.github.io/10-Xenol-portfolio/index.html
 
