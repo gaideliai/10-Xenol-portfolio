@@ -11,7 +11,7 @@ function headerScroll() {
     const DOMlinks = document.querySelectorAll('#main_header nav > a');
 
     for ( let i=0; i<DOMlinks.length; i++ ) {
-        const link = DOMlinks[i];
+        const link = DOMlinks[i];        
         const href = link.href;
         const split = href.split('#');
 
