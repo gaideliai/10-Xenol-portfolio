@@ -1,8 +1,12 @@
 /* basic */
 
 /* layout */
-.bg-primary {
-    background-color: var(--color-primary-light);
+.bg-primary {    
+    background: var(--color-primary-light);
+    background: -moz-linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+    background: -webkit-linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+    background: linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01C6FB",endColorstr="#0066EB",GradientType=1);
     color: var(--color-primary-light-anti);
 }
 .bg-grey {
@@ -22,7 +26,11 @@ h2 {
         display: inline-block;
         width: 50px;
         height: 3px;
-        background-color: var(--color-primary-light);
+        background: var(--color-primary-light);
+        background: -moz-linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+        background: -webkit-linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+        background: linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01C6FB",endColorstr="#0066EB",GradientType=1);
         margin: -65px calc(50% - 25px);
     }
     h2::after {
@@ -30,7 +38,11 @@ h2 {
         display: inline-block;
         width: 90px;
         height: 3px;
-        background-color: var(--color-primary-light);
+        background: var(--color-primary-light);
+        background: -moz-linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+        background: -webkit-linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+        background: linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01C6FB",endColorstr="#0066EB",GradientType=1);
         margin: 7px calc(50% - 45px);
     }
     h2.up {
@@ -65,8 +77,9 @@ h2 {
         line-height: 120px;
     }
     #hero .hero-subtitle {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 25px;
+        margin-bottom: 40px;
     }
     #hero .mouse {
         position: absolute;

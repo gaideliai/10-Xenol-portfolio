@@ -14,6 +14,7 @@ close.addEventListener('click', () => {
 
 //scroll
 window.addEventListener('scroll', headerScroll);
+window.addEventListener('scroll', headerBackground);
 
 //hero
 
