@@ -19,7 +19,7 @@ window.addEventListener('scroll', headerBackground);
 //hero
 
 //about us
-
+renderSkills (skills);
 //portfolio
 
 //services

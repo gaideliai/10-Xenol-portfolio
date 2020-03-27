@@ -7,7 +7,20 @@ const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
 //hero
 
 //about us
-
+const skills = [
+    {
+        title: 'Design',
+        value: 80
+    },
+    {
+        title: 'HTML5',
+        value: 85
+    },
+    {
+        title: 'CSS3',
+        value: 95
+    }
+];
 //portfolio
 
 //services
