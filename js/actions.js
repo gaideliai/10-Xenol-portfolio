@@ -20,6 +20,8 @@ window.addEventListener('scroll', headerBackground);
 
 //about us
 renderSkills (skills);
+
+// document.querySelector('#about .video').addEventListener('click', () =>);
 //portfolio
 
 //services

@@ -74,7 +74,7 @@ function renderSkills (list) {
                     </div>
                     <div class="bar">
                         <div class="value" style="width: ${skill.value}%;">
-                            <div class="loading"></div>
+                            <div class="loading bg-primary"></div>
                         </div>
                     </div>
                 </div>`;   
