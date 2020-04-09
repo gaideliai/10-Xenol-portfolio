@@ -206,15 +206,7 @@ h2 {
     padding: 20px;    
     text-align: center;
 }
-    .service:hover > i {
-        color: #fff;
-        /* background: var(--color-primary-light);
-        background: -moz-linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
-        background: -webkit-linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%); */
-        background: linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01C6FB",endColorstr="#0066EB",GradientType=1);
-        border: none;
-    }
+    
 #services {
     text-align: center;
 }
@@ -226,8 +218,37 @@ h2 {
         line-height: 80px;
         border: 1px solid #ccc;
         border-radius: 50%;
-        background: #fff;        
+        /* color: var(--color-primary-dark);
+        background: linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+        transition: all 0.4s ease 0s;
+        overflow: hidden;     
     }
+    .service > i::before{
+        color: var(--color-primary-dark);
+        background: linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+        .service:hover > i {
+            color: var(--color-primary-light-anti);
+            background: var(--color-primary-light);
+            background: -moz-linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+            background: -webkit-linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+            background: linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01C6FB",endColorstr="#0066EB",GradientType=1);
+            border-color: transparent;
+        }
+        .service:hover > i::before {
+            background: inherit;
+            background-clip: inherit;
+            -webkit-background-clip: inherit;
+            -webkit-text-fill-color: inherit;
+            color: var(--color-primary-light-anti);
+        }
     .service > h3 {
         display: inline-block;
         width: 100%;
@@ -240,6 +261,7 @@ h2 {
         width: 100%;
         font-size: 14px;
         line-height: 20px;
+        color:#777;
     }
 /* team */
 
