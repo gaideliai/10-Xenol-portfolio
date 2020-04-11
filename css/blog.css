@@ -1,8 +1,10 @@
 
 .blog {
-    display: inline-block;        
+    display: inline-block;
+    float: left;        
     position: relative;
-    margin: 20px 0;
+    margin: 20px 15px;
+    width: calc((100% - 90px) / 3);
 }
     .blog> img {
         display: inline-block;

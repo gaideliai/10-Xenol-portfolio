@@ -129,90 +129,90 @@ const blog = [
         description: 'Energistically facilitate market positioning vis-a-vis extensive niches. Competently fashion low-risk high-yield initiatives before cross-unit',
         link: '#'
     },
-    // {
-    //     date: {
-    //         day: 23,
-    //         month: 6,
-    //         year: 2019
-    //     },
-    //     photo: {
-    //         src: 'related-post-1.jpg',
-    //         alt: 'Photo 1'
-    //     },
-    //     title: 'Business Strategy Consule',
-    //     description: 'Energistically facilitate market positioning vis-a-vis extensive niches. Competently fashion low-risk high-yield initiatives before cross-unit',
-    //     link: '#'
-    // },
-    // {
-    //     date: {
-    //         day: 23,
-    //         month: 7,
-    //         year: 2019
-    //     },
-    //     photo: {
-    //         src: 'related-post-2.jpg',
-    //         alt: 'Photo 2'
-    //     },
-    //     title: 'Packaging design for Avanaa',
-    //     description: 'Energistically facilitate market positioning vis-a-vis extensive niches. Competently fashion low-risk high-yield initiatives before cross-unit',
-    //     link: '#'
-    // },
-    // {
-    //     date: {
-    //         day: 23,
-    //         month: 8,
-    //         year: 2020
-    //     },
-    //     photo: {
-    //         src: 'related-post-3.jpg',
-    //         alt: 'Photo 3'
-    //     },
-    //     title: 'Using laptop beside aloe vera',
-    //     description: 'Energistically facilitate market positioning vis-a-vis extensive niches. Competently fashion low-risk high-yield initiatives before cross-unit',
-    //     link: '#'
-    // },
-    // {
-    //     date: {
-    //         day: 23,
-    //         month: 6,
-    //         year: 2018
-    //     },
-    //     photo: {
-    //         src: 'related-post-1.jpg',
-    //         alt: 'Photo 1'
-    //     },
-    //     title: 'Business Strategy Consule',
-    //     description: 'Energistically facilitate market positioning vis-a-vis extensive niches. Competently fashion low-risk high-yield initiatives before cross-unit',
-    //     link: '#'
-    // },
-    // {
-    //     date: {
-    //         day: 23,
-    //         month: 7,
-    //         year: 2019
-    //     },
-    //     photo: {
-    //         src: 'related-post-2.jpg',
-    //         alt: 'Photo 2'
-    //     },
-    //     title: 'Packaging design for Avanaa',
-    //     description: 'Energistically facilitate market positioning vis-a-vis extensive niches. Competently fashion low-risk high-yield initiatives before cross-unit',
-    //     link: '#'
-    // },      
-    // {
-    //     date: {
-    //         day: 23,
-    //         month: 8,
-    //         year: 2020
-    //     },
-    //     photo: {
-    //         src: 'related-post-3.jpg',
-    //         alt: 'Photo 3'
-    //     },
-    //     title: 'Using laptop beside aloe vera',
-    //     description: 'Energistically facilitate market positioning vis-a-vis extensive niches. Competently fashion low-risk high-yield initiatives before cross-unit',
-    //     link: '#'
-    // }
+    {
+        date: {
+            day: 23,
+            month: 6,
+            year: 2019
+        },
+        photo: {
+            src: 'related-post-1.jpg',
+            alt: 'Photo 1'
+        },
+        title: 'Business Strategy Consule',
+        description: 'Energistically facilitate market positioning vis-a-vis extensive niches. Competently fashion low-risk high-yield initiatives before cross-unit',
+        link: '#'
+    },
+    {
+        date: {
+            day: 23,
+            month: 7,
+            year: 2019
+        },
+        photo: {
+            src: 'related-post-2.jpg',
+            alt: 'Photo 2'
+        },
+        title: 'Packaging design for Avanaa',
+        description: 'Energistically facilitate market positioning vis-a-vis extensive niches. Competently fashion low-risk high-yield initiatives before cross-unit',
+        link: '#'
+    },
+    {
+        date: {
+            day: 23,
+            month: 8,
+            year: 2020
+        },
+        photo: {
+            src: 'related-post-3.jpg',
+            alt: 'Photo 3'
+        },
+        title: 'Using laptop beside aloe vera',
+        description: 'Energistically facilitate market positioning vis-a-vis extensive niches. Competently fashion low-risk high-yield initiatives before cross-unit',
+        link: '#'
+    },
+    {
+        date: {
+            day: 23,
+            month: 6,
+            year: 2018
+        },
+        photo: {
+            src: 'related-post-1.jpg',
+            alt: 'Photo 1'
+        },
+        title: 'Business Strategy Consule',
+        description: 'Energistically facilitate market positioning vis-a-vis extensive niches. Competently fashion low-risk high-yield initiatives before cross-unit',
+        link: '#'
+    },
+    {
+        date: {
+            day: 23,
+            month: 7,
+            year: 2019
+        },
+        photo: {
+            src: 'related-post-2.jpg',
+            alt: 'Photo 2'
+        },
+        title: 'Packaging design for Avanaa',
+        description: 'Energistically facilitate market positioning vis-a-vis extensive niches. Competently fashion low-risk high-yield initiatives before cross-unit',
+        link: '#'
+    },      
+    {
+        date: {
+            day: 23,
+            month: 8,
+            year: 2020
+        },
+        photo: {
+            src: 'related-post-3.jpg',
+            alt: 'Photo 3'
+        },
+        title: 'Using laptop beside aloe vera',
+        description: 'Energistically facilitate market positioning vis-a-vis extensive niches. Competently fashion low-risk high-yield initiatives before cross-unit',
+        link: '#'
+    }
 ];
 
 //testimonials
