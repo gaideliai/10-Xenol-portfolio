@@ -84,6 +84,59 @@ function renderSkills (list) {
 }
 
 //portfolio
+function renderPortfolio (list) {
+    let HTML = '';
+    let filterHTML = '';
+    let galleryHTML = '';
+    //surenkame unikalius tagus    
+    let uniqueTags = [];
+
+    for (let i=0; i<list.length; i++) {
+        const tags = list[i].tags;
+        for (let t=0; t<tags.length; t++) {            
+            if (uniqueTags.indexOf(tags[t]) === -1) {
+                uniqueTags.push(tags[t]);
+            }
+        }        
+    }  
+
+    //let allTags = works.map(w => w.tags)
+
+    //sugeneruoti filtravima
+    filterHTML = `<div class="item active">All</div>`;
+        for (let i=0; i<uniqueTags.length; i++) {
+            filterHTML += `<div class="item">${uniqueTags[i]}</div>`
+        }
+
+    //sugeneruoti darbus
+    for (let i = 0; i<list.length; i++) {
+        const work = list[i];
+        galleryHTML += `<div class="item ${work.size === 2 ? 'size-2' : ''}">
+                            <img src="./img/work/${work.photo}" alt="${work.title}">
+                            <div class="hover">
+                                <a href="${work.link ? work.link : '#'}">${work.title}</a>
+                            </div>
+                        </div>`;
+    }
+  
+    //apjungti viska i vientisa HTML
+    HTML += `<div class="gallery">
+                <div class="filter">
+                    ${filterHTML}
+                </div>
+                <div class="list">
+                    ${galleryHTML}
+                </div>
+            </div>`;
+
+    //visa HTML iterpiame i DOM
+    const DOMgallery = document.querySelector('#portfolio_gallery');
+    DOMgallery.innerHTML = HTML;
+
+    //event listeners darbu filtravimui
+
+    return;
+}
 
 //services
 function renderServices(serviceList){

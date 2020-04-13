@@ -23,6 +23,7 @@ renderSkills (skills);
 
 // document.querySelector('#about .video').addEventListener('click', () =>);
 //portfolio
+renderPortfolio (works);
 
 //services
 renderServices(services);

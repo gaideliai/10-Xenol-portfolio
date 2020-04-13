@@ -200,6 +200,10 @@ h2 {
 }
 /* portfolio */
 
+.gallery {
+    margin-top: 50px;
+}
+
 /* services */
 .service {
     display: inline-block;
@@ -243,7 +247,8 @@ h2 {
             border-color: transparent;
         }
         .service:hover > i::before {
-            background: inherit;
+            /* background: inherit; */
+            background: linear-gradient(90deg, #01B7F9 0%, #0078EE 100%);
             background-clip: inherit;
             -webkit-background-clip: inherit;
             -webkit-text-fill-color: inherit;
