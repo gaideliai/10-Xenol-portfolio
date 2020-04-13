@@ -102,6 +102,28 @@ function renderServices(serviceList){
 }
 
 //team
+function renderTeamMember (member) {
+    return `<div class="member">
+                <div class="top">
+                    <img src="./img/team/${member.photo.src}" alt="${member.photo.alt}">
+                    <div class="socials">
+                        <div class="list">
+                            <a href="${member.socials[0].link}">
+                                <i class="fa fa-${member.socials[0].icon}"></i>
+                            </a>
+                            <a href="${member.socials[1].link}">
+                                <i class="fa fa-${member.socials[1].icon}"></i>
+                            </a>
+                            <a href="${member.socials[2].link}">
+                                <i class="fa fa-${member.socials[2].icon}"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>   
+                <p class="name">${member.name}</p>                
+                <p class="position">${member.position}</p>                
+            </div>`;
+}
 
 //numbers
 function renderAchievements(list){
@@ -231,6 +253,10 @@ function renderPagination (target, renderingFunction, data, countPerPage) {
     for (let i=0; i<pageCount; i++) {
         pageHTML = '';
         for (let p = 0; p < countPerPage; p++) {
+            const dataIndex = i * countPerPage + p;
+            if (dataIndex >= data.length) {
+                break;
+            }
             pageHTML += renderingFunction(data[i * countPerPage + p], 12/countPerPage);
             
         }
