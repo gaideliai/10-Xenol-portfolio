@@ -86,6 +86,13 @@ h2 {
         left: calc(50% - 20px);
         bottom: 40px;
     }
+        #hero .mouse .mouse-link {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
 
 /* about us */
 #about p {
