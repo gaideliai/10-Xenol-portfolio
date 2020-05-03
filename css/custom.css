@@ -77,9 +77,12 @@ h2 {
         font-weight: bolder;
     }
     #hero .animated-title {
-        font-size: 64px;
+        font-size: 60px;
         line-height: 100px;
     }
+        #hero .animated-title > div {
+            display: inline;
+        }
     #hero .hero-subtitle {
         font-size: 20px;
         line-height: 25px;

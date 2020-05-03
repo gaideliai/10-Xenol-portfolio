@@ -17,6 +17,18 @@ window.addEventListener('scroll', headerScroll);
 window.addEventListener('scroll', headerBackground);
 
 //hero
+const timeStep = 300;
+const delay = 2000;
+const wordDelay = 500;
+const deleteTimeStep = 150;
+let timer = 0;
+
+for (let i=0; i<heroes.length; i++) {
+    const word = heroes[i];    
+    heroTextAnimation(word, timer);
+    const wait = word.length*(timeStep+deleteTimeStep) + delay + wordDelay;
+    timer += wait;
+}
 
 //about us
 renderSkills (skills);

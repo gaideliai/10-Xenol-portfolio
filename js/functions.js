@@ -61,6 +61,30 @@ function headerBackground() {
     return;
 }
 //hero
+function heroTextAnimation (word, typeDelay) {
+    //elementas, kuriame animuotai keiciasi tekstas
+    const target = document.querySelector('#animated_text');
+    target.textContent = '';
+    //po kiek laiko spausdinti kita raide
+    const timeStep = 300;
+    const delay = 2000;
+    const deleteTimeStep = 150;
+    
+    for (let i=0; i<word.length; i++) {
+        const letter = word[i];
+        setTimeout(()=> {
+            target.textContent += letter;
+        }, typeDelay + timeStep*(i+1));
+    }
+    for (let i=0; i<word.length; i++) {
+            setTimeout(()=> {
+                word = word.slice(0, -1);
+                target.textContent = word;
+        }, typeDelay + timeStep*word.length + delay + deleteTimeStep*i);
+    }
+
+    return;
+}
 
 //about us
 function renderSkills (list) {
