@@ -272,11 +272,18 @@ function renderBlogPost(post) {
                 <a class="more" href="${post.link}">Learn more</a>
             </div>`;
 }
+
 //testimonials
 
 //get in touch
 
 //map
+// function initMap () {
+//     const hoolehua = {lat: 21.1039362, lng: -157.1440988};
+//     const map = new google.maps.Map(
+//         document.querySelector('.map'), {zoom: 4, center: hoolehua});
+//     const marker = new google.maps.Marker({position: hoolehua, map: map});
+// }
 
 //footer
 
