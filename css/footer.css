@@ -1,0 +1,31 @@
+#footer {
+    text-align: center;
+}
+#footer img {
+    display: inline-block;
+}
+#footer nav {
+    display: inline-block;
+    width: 100%;
+    margin: 40px 0;
+}
+    .footer-links {
+        display: inline-block;
+        margin: 10px 25px;
+    }
+        #footer nav > .footer-links > a {        
+            font-size: 14px;
+            line-height: 17px;            
+            padding: 5px 0;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #000;
+            text-decoration: none;
+            border-bottom: 1px solid rgb(107, 67, 67);
+        }
+#footer p {
+    display: inline-block;
+    width: 100%;
+    color: #777;
+    text-align: center;
+}
