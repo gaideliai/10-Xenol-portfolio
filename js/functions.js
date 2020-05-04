@@ -61,29 +61,57 @@ function headerBackground() {
     return;
 }
 //hero
-function heroTextAnimation (word, typeDelay) {
-    //elementas, kuriame animuotai keiciasi tekstas
-    const target = document.querySelector('#animated_text');
-    target.textContent = '';
-    //po kiek laiko spausdinti kita raide
-    const timeStep = 300;
-    const delay = 2000;
-    const deleteTimeStep = 150;
-    
-    for (let i=0; i<word.length; i++) {
-        const letter = word[i];
-        setTimeout(()=> {
-            target.textContent += letter;
-        }, typeDelay + timeStep*(i+1));
-    }
-    for (let i=0; i<word.length; i++) {
-            setTimeout(()=> {
-                word = word.slice(0, -1);
-                target.textContent = word;
-        }, typeDelay + timeStep*word.length + delay + deleteTimeStep*i);
-    }
+function manipulateLetter( list, wordIndex, letterIndex, actionType ) {
+    // elementas kuriame animuotai keiciasi tekstas
+    const target = document.getElementById('animated_text');
+    const timeStep = 200;
+    const delayAfter = 2000;
+    const deleteTimeStep = 100;
+    const delayBefore = 500;
 
-    return;
+    if ( actionType === 'add' ) {
+        target.classList.add('line');
+        setTimeout(() => {
+            target.textContent += list[wordIndex][letterIndex];
+            
+            if (letterIndex < list[wordIndex].length-1) {
+                manipulateLetter( list, wordIndex, letterIndex+1, actionType );
+            } else {
+                manipulateLetter( list, wordIndex, letterIndex, 'delayAfter' );
+            }
+        }, timeStep);
+    }
+    if (actionType === 'delayAfter') {
+        // target.classList.remove('line');
+        setTimeout(() => {
+            manipulateLetter( list, wordIndex, letterIndex, 'remove' );
+        }, delayAfter);
+        
+    }
+    if (actionType === 'remove') {
+        // target.classList.add('line');
+        setTimeout(() => {
+            const word = list[wordIndex];
+            target.textContent = word.slice(0, letterIndex);
+            
+            if (letterIndex-1 >= 0) {
+                manipulateLetter( list, wordIndex, letterIndex-1, actionType );
+            } else {
+                manipulateLetter( list, wordIndex, letterIndex, 'delayBefore' );
+            }
+        }, deleteTimeStep);
+    }
+    if ( actionType === 'delayBefore' ) {
+        target.classList.remove('line');
+        setTimeout(() => {
+            // tikriname kuri zodi paduoti (jei pabaiga, tai duodam vel pirma)
+            if ( wordIndex+1 === list.length ) {
+                manipulateLetter( list, 0, 0, 'add' );
+            } else {
+                manipulateLetter( list, wordIndex+1, 0, 'add' );
+            }
+        }, delayBefore);
+    }
 }
 
 //about us

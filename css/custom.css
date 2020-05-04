@@ -82,6 +82,10 @@ h2 {
     }
         #hero .animated-title > div {
             display: inline;
+            border: none;
+        }
+        #hero .animated-title > div.line {
+            border-right: 5px solid #fff;
         }
     #hero .hero-subtitle {
         font-size: 20px;
