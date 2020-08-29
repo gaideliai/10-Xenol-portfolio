@@ -240,7 +240,7 @@ function renderServices(serviceList){
 function renderTeamMember (member) {
     return `<div class="member">
                 <div class="top">
-                    <img src="./img/team/${member.photo.src}" alt="${member.photo.alt}">
+                    <img src="./img/Team/${member.photo.src}" alt="${member.photo.alt}">
                     <div class="socials">
                         <div class="list">
                             <a href="${member.socials[0].link}">
