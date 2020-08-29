@@ -164,7 +164,7 @@ function renderPortfolio (list) {
         const work = list[i];
         galleryHTML += `<div class="item ${work.size === 2 ? 'size-2' : ''}"
                             data-tags="${work.tags}">
-                            <img src="./img/work/${work.photo}" alt="${work.title}">
+                            <img src="./img/Work/${work.photo}" alt="${work.title}">
                             <div class="hover">
                                 <a href="${work.link ? work.link : '#'}">${work.title}</a>
                             </div>
